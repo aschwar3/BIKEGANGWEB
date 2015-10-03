@@ -1,0 +1,94 @@
+a { text-decoration: none; color:inherit;}
+
+h2,h1,p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,body {
+  height:100%;
+  overflow: hidden;
+}
+
+.Title {
+  color:white;
+  background-color: 002971;
+  font-size: 30;
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+
+.topHalf {
+  font-size: 20;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.entryForm {
+  font-size: 20;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.BikesStatus {
+  font-size: 20;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+
+}
+
+.bike {
+  display:flex;
+  justify-content:center;
+}
+
+
+.Freeman {
+  width:50%;
+  font-size: 18;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.Availabilities {
+  display: flex;
+}
+
+.CampusPolice {
+  background-color: grey;
+  width: 50%;
+  height:11.2%;
+  font-size: 18;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.FirstTime {
+  display:flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom:20px;
+  right: 20px;
+}
+
+.FreemanBikes {
+  flex-direction: column;
+  height:65.2%;
+  background-color: purple;
+  width:50%;
+}
+
+.PoBikes {
+  flex-direction: column;
+  height:65.2%;
+  background-color: purple;
+  width:50%;
+}
