@@ -45,6 +45,10 @@ h2 {
     font-size: 50px;
 }
 
+h1 {
+    color: #002971;
+}
+
 a:link {
     color: #002971;
     text-decoration: none;
