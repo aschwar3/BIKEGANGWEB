@@ -16,6 +16,7 @@ body {
     display:flex;
     justify-content: space-between;
     width: 75%;
+    margin-top: 5%;
 }
 
 .keys {
@@ -27,6 +28,8 @@ body {
     padding-bottom: 5%;
     border: 5px solid #002971;
     border-radius: 10px;
+    font-size: 120%;
+    line-height: 2;
 }
 
 section {
@@ -65,7 +68,6 @@ a:active {
     background-color: white;
 }
 
-/*div {
-    border: none;
-    background-color: inherit;
-}*/
+#explain {
+    line-height: 50%;
+}
