@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" href="firstPage.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='firstPage.css') }}">
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 </head>
   <body>
@@ -10,8 +10,8 @@
     <section class = "topHalf">
       <h2> IF YOU ARE AT A BIKESHARE CONSOLE, ENTER BIKE CODE BELOW: </h2>
     </section>
-    <form class="entryForm" method = "post">
-    <input type="text"> <!-- HERE WE NEED IT TO TAKE THE SUMBMISSION, MAKE SURE IT IS A VALID PASSWORD
+    <form class="entryForm" method = "post" action="/firstPage">
+    <input type="text" name="machinecode" maxlength="4"> <!-- HERE WE NEED IT TO TAKE THE SUMBMISSION, MAKE SURE IT IS A VALID PASSWORD
     THEN LINK TO THE CHECK IN/CHECK OUT A BIKE PAGE -->
     <input type="submit">
   </form>
@@ -19,7 +19,7 @@
       <h2 > CLICK BIKE TO VIEW AVAILABILITIES </h2>
     </section>
     <section class = "bike">
-    <a href="file:///Users/anneschwartz/Desktop/git_tutorial/statusPage.html"> <img class = "bikePic" src = "bike.jpg"> </a>
+    <a href="/statusPage"> <img class = "bikePic" src = "{{ url_for('static', filename='bike.jpg') }}"> </a>
   </section>
     <a class="FirstTime" href = "http://www.wellesley.edu/sustainability/transportation/bike-share"> <h2> First time user? </h2> </a>
 

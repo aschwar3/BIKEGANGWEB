@@ -46,27 +46,19 @@ html,body {
 }
 
 
-.Freeman {
-  width:50%;
-  font-size: 18;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-
-
-}
-
 .Availabilities {
   display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.CampusPolice {
+.Bikes {
   background-color: grey;
-  width: 50%;
-  height:11.2%;
+  flex-grow: 1;
   font-size: 18;
+  width:50%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 
@@ -79,16 +71,21 @@ html,body {
   right: 20px;
 }
 
-.FreemanBikes {
+.Keys {
+  display:flex;
   flex-direction: column;
   height:65.2%;
-  background-color: purple;
-  width:50%;
+  background-color:CCCCCC;
+  align-items: center;
+  overflow-y: scroll;
 }
 
-.PoBikes {
-  flex-direction: column;
-  height:65.2%;
-  background-color: purple;
-  width:50%;
+.Location {
+  display: flex;
+  justify-content: center;
+}
+
+.loc {
+  color:white;
+
 }

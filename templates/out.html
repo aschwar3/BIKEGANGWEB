@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8">
     <title>Check bikes Out</title>
-    <link rel="stylesheet" href="hackathon.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='hackathon.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
   </head>
@@ -17,8 +17,8 @@
       <div>
           <h2>Check a bike out!</h2>
           Enter your Bikeshare pin and the last 4 digits of your B number<br>
-          <form method="post">
-              <input type="text" placeholder="4 digit pin" maxlength="4"> - <input type="text" placeholder="Last 4 digits of B#" maxlength="4">
+          <form method="post" action="/out">
+              <input type="text" name="userid" placeholder="4 digit pin" maxlength="4"> - <input type="text" name="pin" placeholder="Last 4 digits of B#" maxlength="4">
               <input type="Submit">
           </form>
       </div>
