@@ -7,8 +7,13 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Key Availabilty</title>
-        <link rel="stylesheet" href="hackathon.css">
+
+        <!--<title>Key Availabilty</title>
+        <link rel="stylesheet" href="hackathon.css">-->
+
+        <title>Check bikes Out</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='hackathon.css') }}">
+
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
     </head>
@@ -21,6 +26,7 @@
             </div>
             <div class="column">
                 <div class="keys">
+<!--
                     Key 1234 <br>
                     Key 1234 <br>
                     Key 1234 <br>
@@ -38,8 +44,45 @@
                     Key 1234 <br>
                     Key 1234 <br>
                     Key 1234 <br>
-                    Key 1234 <br>
+                    Key 1234 <br>-->
+
+                    Freeman Hall <br>
+                    <br>
+                    Key 01 <br>
+                    Key 02 <br>
+                    Key 03 <br>
+                    Key 04 <br>
+                    Key 05 <br>
+                    Key 06 <br>
+                    Key 07 <br>
+                    Key 08 <br>
+                    Key 09 <br>
+                    Key 10 <br>
                 </div>
+                <div class="keys">
+                    Campus Police <br>
+                    <br>
+                    Key 11 <br>
+                    Key 12 <br>
+                    Key 13 <br>
+                    Key 14 <br>
+                    Key 15 <br>
+                    Key 16 <br>
+                    Key 17 <br>
+                    Key 18 <br>
+                    Key 19 <br>
+                    Key 20 <br>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+            <h2>Select your key:</h2>
+          <form method="post" action="/keys">
+              <input type="text" name="keynum" placeholder="2 digit key number" maxlength="2">
+              <input type="Submit">
+          </form>
             </div>
         </section>
     </body>
